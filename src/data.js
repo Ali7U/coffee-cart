@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       id: "1",
-      cName: "القهوة السعودية",
+      cName: "القهوة العربية",
       price: 24,
       image:
         "https://www.mmlakaty.com/wp-content/uploads/2018/07/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D9%82%D9%87%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B4%D9%82%D8%B1%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D9%87%D9%8A%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D8%B5%D9%88%D9%84%D9%87%D8%A7.jpg",
@@ -40,7 +40,7 @@ const data = {
       cName: "كابتشينو",
       price: 20,
       image:
-        "https://static.webteb.net/images/content/tbl_articles_article_20079_11cff45585-5cdd-445b-b351-91f47b82cbb8.jpg",
+        "https://kitchen.sayidaty.net/uploads/small/f7/f740ce9891add9667a19e710c18a3552_w750_h500.jpg",
     },
     {
       id: "7",

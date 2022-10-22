@@ -1,7 +1,7 @@
 import React from "react";
 
 function Cart(props) {
-  const { cartItem, onAdd } = props;
+  const { cartItem, onAdd, onRem } = props;
   const itemPrice = cartItem.reduce(
     (acc, curr) => acc + curr.price * curr.qty,
     0
@@ -23,7 +23,9 @@ function Cart(props) {
               +
             </button>
             {item.qty}
-            <button className="rem">-</button>
+            <button onClick={() => onRem(item)} className="rem">
+              -
+            </button>
             {item.price.toFixed(2)}
           </div>
         </div>
@@ -31,7 +33,7 @@ function Cart(props) {
 
       {cartItem.length !== 0 && (
         <>
-        <hr/>
+          <hr />
           <div className="block">
             <div className="col-2">السعر</div>
             <div className="col-2 text-tight">{itemPrice.toFixed(2)}</div>
@@ -45,7 +47,12 @@ function Cart(props) {
             <div className="col-2 text-tight">{totalPrice.toFixed(2)}</div>
           </div>
           <div>
-            <button className="lastButton" onClick={()=> alert('request is done')}>اتمم طلبك الان</button>
+            <button
+              className="lastButton"
+              onClick={() => alert("request is done")}
+            >
+              اتمم طلبك الان
+            </button>
           </div>
         </>
       )}
